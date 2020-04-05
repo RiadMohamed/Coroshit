@@ -58,13 +58,29 @@
 			children = (
 				0C09AC30243A14820017C44C /* AppDelegate.swift */,
 				0C09AC32243A14820017C44C /* SceneDelegate.swift */,
-				0C09AC34243A14820017C44C /* ViewController.swift */,
-				0C09AC36243A14820017C44C /* Main.storyboard */,
+				0C09AC44243A14F70017C44C /* Controller */,
+				0C09AC45243A15100017C44C /* View */,
 				0C09AC39243A14960017C44C /* Assets.xcassets */,
 				0C09AC3B243A14960017C44C /* LaunchScreen.storyboard */,
 				0C09AC3E243A14960017C44C /* Info.plist */,
 			);
 			path = Coroshit;
+			sourceTree = "<group>";
+		};
+		0C09AC44243A14F70017C44C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C09AC34243A14820017C44C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0C09AC45243A15100017C44C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C09AC36243A14820017C44C /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
