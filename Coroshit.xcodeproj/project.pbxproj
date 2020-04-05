@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C003E5E243A1CD500B66598 /* MyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C003E5D243A1CD500B66598 /* MyLocation.swift */; };
 		0C09AC31243A14820017C44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C09AC30243A14820017C44C /* AppDelegate.swift */; };
 		0C09AC33243A14820017C44C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C09AC32243A14820017C44C /* SceneDelegate.swift */; };
 		0C09AC35243A14820017C44C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C09AC34243A14820017C44C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C003E5D243A1CD500B66598 /* MyLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocation.swift; sourceTree = "<group>"; };
 		0C09AC2D243A14810017C44C /* Coroshit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coroshit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C09AC30243A14820017C44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C09AC32243A14820017C44C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C003E5F243A1CDB00B66598 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C003E5D243A1CD500B66598 /* MyLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0C09AC24243A14810017C44C = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 			children = (
 				0C09AC30243A14820017C44C /* AppDelegate.swift */,
 				0C09AC32243A14820017C44C /* SceneDelegate.swift */,
+				0C003E5F243A1CDB00B66598 /* Model */,
 				0C09AC44243A14F70017C44C /* Controller */,
 				0C09AC45243A15100017C44C /* View */,
 				0C09AC39243A14960017C44C /* Assets.xcassets */,
@@ -156,6 +167,7 @@
 			files = (
 				0C09AC35243A14820017C44C /* ViewController.swift in Sources */,
 				0C09AC31243A14820017C44C /* AppDelegate.swift in Sources */,
+				0C003E5E243A1CD500B66598 /* MyLocation.swift in Sources */,
 				0C09AC33243A14820017C44C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
