@@ -6,6 +6,7 @@ struct MyLocation {
     var longCoordinate: CLLocationDegrees
     var latCoordinate: CLLocationDegrees
     var unixTimestamp: TimeInterval
+    static var globalEnable = true
     
     init(long: CLLocationDegrees, lat: CLLocationDegrees) {
         self.longCoordinate = long

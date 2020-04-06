@@ -42,12 +42,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startServiceButtonTapped(_ sender: UIButton) {
+        MyLocation.globalEnable = true
         locationManager.requestLocation()
-        
     }
     
     @IBAction func stopServiceButtonTapped(_ sender: UIButton) {
         print(14)
+        MyLocation.globalEnable = false
     }
     
 }
