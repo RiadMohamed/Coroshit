@@ -24,6 +24,9 @@
                                         <state key="normal" title="Change Status">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="changeStatusButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IWO-Ht-haF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5K0-SC-uOY">
                                         <rect key="frame" x="237" y="0.0" width="137" height="34"/>
@@ -31,6 +34,9 @@
                                         <state key="normal" title="Sync">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="syncButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yCT-X9-Erb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -43,6 +49,9 @@
                                         <state key="normal" title="Start Service">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="startServiceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bdC-8F-jyl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCd-eh-2qf">
                                         <rect key="frame" x="237" y="0.0" width="137" height="34"/>
@@ -50,6 +59,9 @@
                                         <state key="normal" title="Stop Service">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="stopServiceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wj4-Xg-2YG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -60,20 +72,57 @@
                                     <constraint firstAttribute="width" constant="311" id="qMn-cg-NFg"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYF-KD-Ut7">
+                                <rect key="frame" x="93" y="645" width="39.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qy7-mT-NQs">
+                                <rect key="frame" x="258.5" y="645" width="39.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0et-0N-0gP">
+                                <rect key="frame" x="93" y="682" width="59" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bId-8E-rGb">
+                                <rect key="frame" x="239" y="682" width="59" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qy7-mT-NQs" secondAttribute="trailing" constant="116" id="9eQ-qd-VZU"/>
+                            <constraint firstItem="0et-0N-0gP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="9w1-UK-vhn"/>
+                            <constraint firstItem="BYF-KD-Ut7" firstAttribute="top" secondItem="Uv0-3u-Fnr" secondAttribute="bottom" constant="41.5" id="B2g-V4-9Ji"/>
                             <constraint firstItem="Uv0-3u-Fnr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ELI-48-y3O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HEe-WB-Lu2" secondAttribute="trailing" constant="20" id="EZa-s7-aVT"/>
+                            <constraint firstItem="Qy7-mT-NQs" firstAttribute="top" secondItem="Uv0-3u-Fnr" secondAttribute="bottom" constant="41.5" id="I6a-rl-p3n"/>
                             <constraint firstItem="sKc-oS-dGV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="K0e-wJ-TRF"/>
                             <constraint firstItem="sKc-oS-dGV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QiE-6K-ZnZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bId-8E-rGb" secondAttribute="trailing" constant="116" id="UYH-vc-3Dt"/>
                             <constraint firstItem="HEe-WB-Lu2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UnQ-6W-IK7"/>
+                            <constraint firstItem="0et-0N-0gP" firstAttribute="top" secondItem="BYF-KD-Ut7" secondAttribute="bottom" constant="8" id="etc-St-bue"/>
+                            <constraint firstItem="bId-8E-rGb" firstAttribute="top" secondItem="Qy7-mT-NQs" secondAttribute="bottom" constant="8" id="gJV-iX-V5r"/>
+                            <constraint firstItem="BYF-KD-Ut7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="jdo-Gq-vro"/>
                             <constraint firstItem="Uv0-3u-Fnr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qZP-Tc-TQt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sKc-oS-dGV" secondAttribute="trailing" constant="20" id="rlb-aA-uAg"/>
                             <constraint firstItem="HEe-WB-Lu2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wlp-6I-TH4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="QRImageView" destination="Uv0-3u-Fnr" id="VgG-Kx-MiF"/>
+                        <outlet property="latLabel" destination="Qy7-mT-NQs" id="8k5-MB-yQf"/>
+                        <outlet property="longLabel" destination="bId-8E-rGb" id="XZQ-SJ-87Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
